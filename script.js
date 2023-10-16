@@ -4,6 +4,7 @@ const apiUrl =
 
 const defaultCity = 'new york'; // Set default city
 
+let searchForm = document.querySelector('.search');
 let searchInput = document.querySelector('.search input');
 let searchButton = document.querySelector('.search button');
 
@@ -46,6 +47,11 @@ async function checkWeather(city) {
 // Call checkWeather with the deafult city when the page loads
 document.addEventListener('DOMContentLoaded', () => {
   checkWeather(defaultCity);
+});
+
+searchForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  checkWeather(searchInput.value);
 });
 
 searchButton.addEventListener('click', () => {
