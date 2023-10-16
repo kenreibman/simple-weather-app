@@ -53,7 +53,3 @@ searchForm.addEventListener('submit', (e) => {
   e.preventDefault();
   checkWeather(searchInput.value);
 });
-
-searchButton.addEventListener('click', () => {
-  checkWeather(searchInput.value);
-});
