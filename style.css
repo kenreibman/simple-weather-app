@@ -102,3 +102,18 @@ body {
   text-align: left;
   margin-top: 10px;
 }
+
+@media screen and (max-width: 640px) {
+  .card {
+    padding: 24px;
+  }
+  .details {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .details .col {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+}
