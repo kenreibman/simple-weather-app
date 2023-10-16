@@ -44,7 +44,7 @@ async function checkWeather(city) {
   }
 }
 
-// Call checkWeather with the deafult city when the page loads
+// Call checkWeather with the default city when the page loads
 document.addEventListener('DOMContentLoaded', () => {
   checkWeather(defaultCity);
 });
